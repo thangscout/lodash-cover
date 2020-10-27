@@ -8,7 +8,7 @@ module.exports = {
 };
 
 
-const object = { 'a': [{ 'b': { 'c': 3 } }, 4] }
-let result = at(object, ['a[0].b.c', 'a[1]']);
+// const object = { 'a': [{ 'b': { 'c': 3 } }, 4] }
+// let result = at(object, ['a[0].b.c', 'a[1]']);
 
-console.log('result:', result);
+// console.log('result:', result);
