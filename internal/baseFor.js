@@ -5,7 +5,7 @@ function baseFor(object, iteratee, keysFuns) {
   let index = -1;
 
   while (length--) {
-    const key = props[++inex];
+    const key = props[++index];
     if (iteratee(iterable[key], key, iterable) === false) {
       break;
     }
