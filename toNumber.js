@@ -46,5 +46,5 @@ function toNumber(value) {
 }
 
 module.exports = {
-  toNUmber,
+  toNumber,
 };
