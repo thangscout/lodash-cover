@@ -4,7 +4,7 @@ const { isArrayLike } = require("../isArrayLike");
 // The base implementation of `forEach`.
 
 function baseEach(collection, iteratee) {
-  if (collection) {
+  if (collection == null) {
     return collection;
   }
   if (!isArrayLike(collection)) {

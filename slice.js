@@ -15,21 +15,20 @@ function slice(array, start, end) {
   if (end < 0) {
     end += length;
   }
-  length = start > end ? 0 : (( end - start) >>> 0)
+  length = start > end ? 0 : (end - start) >>> 0;
   start >>>= 0;
 
   let index = -1;
   const result = new Array(length);
-  while(++index < length) {
-    result[index] = array[index + start ];
+  while (++index < length) {
+    result[index] = array[index + start];
   }
   return result;
 }
 
 module.exports = {
   slice,
-}
-
+};
 
 // let result = [1, 2, 3, 4];
 // console.log('result:', slice(result, 1))
