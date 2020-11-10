@@ -37,9 +37,9 @@ class MapCache {
   clear() {
     this.size = 0;
     this.__data__ = {
-      hash: new Hash(),
-      map: new Map(),
-      string: new Hash(),
+      "hash": new Hash,
+      "map": new Map,
+      "string": new Hash,
     };
   }
 
@@ -57,7 +57,7 @@ class MapCache {
 
   // Checks if a map value for `key` exists.
   has(key) {
-    return getMapData().has(key);
+    return getMapData(this, key).has(key);
   }
 
   // Sets the map `key` to `value`;
